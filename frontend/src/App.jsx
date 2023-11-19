@@ -1,22 +1,39 @@
-import { Route, Routes } from "react-router-dom"
-import Home from "./pages/home"
-import Register from "./pages/register"
-import Profile from "./pages/profile"
-import { Layout } from "./layout/layout"
-import { Login } from "./pages/login"
-function App() {
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./Pages/HomePage/Home.jsx";
+import { Login } from "./Pages/Login/Login.jsx";
+import { Profile } from "./Pages/Profile/Profile.jsx";
+import { Layout } from "./components/Layout/Layout.jsx";
+import Register from "./Pages/Register/register.jsx";
+import { NotFoundPage } from "./Pages/Nopage/NoPage.jsx";
+import { AddBank } from "./Pages/AddBank/addBank.jsx";
+import { Benefeciary } from "./Pages/Beneficiary/beneficiary.jsx";
+import { PayBills } from "./Pages/PayBills/paybills.jsx";
+import { Transaction } from "./Pages/Transaction/transaction.jsx";
+import { Wallet } from "./Pages/Wallet/wallet.jsx";
 
-  return (
-    <>
-      <Layout />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
-    </>
-  )
+function App() {
+    return (
+        <>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route path="/" element={<Home />} />
+                    <Route path="login" element={<Login />} />
+                    <Route path="register" element={<Register />} />
+                    <Route path="profile" element={<Profile />} />
+                    <Route path="*" element={<NotFoundPage />} />
+                </Route>
+
+                <Route>
+                    <Route path="/addBank" element={<AddBank />} />
+                    <Route path="/beneficiary" element={<Benefeciary />} />
+                    <Route path="/payBills" element={<PayBills />} />
+                    <Route path="/transaction" element={<Transaction />} />
+                    <Route path="/wallet" element={<Wallet />} />
+                </Route>
+
+            </Routes>
+        </>
+    );
 }
 
-export default App
+export default App;

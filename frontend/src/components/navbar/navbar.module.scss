@@ -1,57 +1,25 @@
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style-type: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .container {
-    background-color: #4233;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  background: linear-gradient(to right, rgba(37, 37, 0, 0.668), rgb(38, 0, 0));
+  font-size: 30px;
 
-.userName {
-    color: black;
+  .liComponent {
+    padding: 20px;
+    color: rgb(204, 204, 204);
     font-size: 20px;
-
+  }
 }
 
-.formContainer {
-    font-size: 30px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.liHome {
-    padding-right: 20px;
-    color: #333;
-
-}
-
-.liRegister {
-    padding-left: 20px;
-    color: #333;
-
-}
-
-.liProfile {
-    padding-right: 20px;
-    color: #333;
-}
-
-.liLogin {
-    color: #333;
-}
-
-.formBtn {
-    margin: 5px 0px 20px 10px;
-    display: inline-block;
-    width: 100px;
-    height: 30px;
-    border-radius: 20px;
-    font-size: 20px;
+.LogBtn {
+  color: black;
 }

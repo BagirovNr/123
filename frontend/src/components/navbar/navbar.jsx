@@ -1,27 +1,24 @@
 import { Link, useNavigate } from "react-router-dom";
-import style from './navbar.module.scss'
+import style from "../Navbar/Navbar.module.scss"
 export function Navbar() {
 
-    const navigation = useNavigate()
+    const navigate = useNavigate();
     const handleLogaut = () => {
-        navigation('/login')
+        navigate('/login')
     }
-
-
-
-
     return (
-        <header className={style.container}>
-            <div className={style.userName} >UserName</div>
-
-            <ul className={style.formContainer}>
-                <Link className={style.liHome} to='/'>Home</Link>
-                <Link className={style.liProfile} to='/profile'>Profile</Link>
-                <Link className={style.liLogin} to='/login'>Login</Link>
-                <Link className={style.liRegister} to='/register'>Register</Link>
-                <button className={style.formBtn} onClick={handleLogaut}>logout</button>
-            </ul>
-        </header>
-
-    )
+        <>
+            <header className={style.container} >
+                <div>
+                    UserName
+                </div>
+                <ul>
+                    <Link className={style.liComponent} to='/'>Home</Link>
+                    <Link className={style.liComponent} to='/profile'>Profile</Link>
+                    <Link className={style.liComponent} to='/login'>Login</Link>
+                    <button className={style.LogBtn} onClick={handleLogaut}>Log out</button>
+                </ul>
+            </header>
+        </>
+    );
 }
