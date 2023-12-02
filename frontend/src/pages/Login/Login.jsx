@@ -48,7 +48,7 @@ export function Login() {
 
                 <div className={style.contactWrapper}>
                     <header className={style.loginCta}>
-                        <h2>Account Login</h2>
+                        <h2>Login</h2>
                     </header>
                     <form onSubmit={handleSubmit}>
 
