@@ -5,12 +5,7 @@
 
 }
 
-$rccs-card-ratio: 1.5858;
-$rccs-size: 590px;
 
-.creditCard {
-    width: $rccs-size;
-}
 
 .upContainer {
     position: absolute;
@@ -55,7 +50,7 @@ h1 {
     overflow: hidden;
     position: relative;
     top: 10%;
-    left: 110%;
+    left: 100%;
     transform: translate(-50%, -50%);
     width: 550px;
 

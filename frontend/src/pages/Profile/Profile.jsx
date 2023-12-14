@@ -3,7 +3,7 @@ import pStyle from "./profile.module.scss";
 import { Navbar } from "../../components/Navbar/Navbar";
 export function Profile() {
     return (
-        <>
+        <section>
             <nav className={pStyle.navContainer}>
                 <ul className={pStyle.profileNav} >
                     <li>
@@ -27,6 +27,6 @@ export function Profile() {
                     </p>
                 </ul>
             </nav>
-        </>
+        </section>
     )
 }
