@@ -1,0 +1,83 @@
+.container{
+    margin: 0;
+    padding: 0;
+}
+.mainContent{
+    display: contents;
+    width: 100%;
+    
+}
+.fff{
+    display: flex;
+}
+.firstUl{
+    display: flex;
+    div{
+
+        padding: 30px;
+        background-color: rgba(21, 21, 130, 0.963);
+        width:800px;
+        height:250px;
+    }
+    ul{
+        padding: 20px;
+    }
+    
+}
+.balance{
+    color: #ddd;
+    
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 50px;
+    }
+    p{
+        font-size: 25px;
+    }
+}
+.grCode{
+    border-radius: 10px;
+    position: relative;
+    width: 300px;
+    img{
+        position: absolute;
+        top: 0;
+        left: 50px;
+        width: 150px;
+        height: 150px;
+    }
+    p{
+        position: absolute;
+        bottom: 10px;
+        left: 10px; 
+        background-color:  rgba(21, 21, 130, 0.963);
+        width: 240px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+.secondUl{
+    margin-top:60px;
+    display: flex;
+    justify-content: space-around;
+    li{
+        border: 1px solid #333;
+        width: 200px;
+        height: 200px;
+        border-radius: 40px;
+        text-align: center;
+        padding-top: 60px;
+        cursor: pointer;
+    }
+    span{
+        font-size: 40px;
+    }
+    p{
+        padding: 20px;
+    }
+}
+

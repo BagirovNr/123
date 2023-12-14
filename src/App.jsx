@@ -24,11 +24,11 @@ function App() {
                 </Route>
 
                 <Route>
-                    <Route path="/addBank" element={<AddBank />} />
-                    <Route path="/beneficiary" element={<Benefeciary />} />
-                    <Route path="/payBills" element={<PayBills />} />
-                    <Route path="/transaction" element={<Transaction />} />
-                    <Route path="/wallet" element={<Wallet />} />
+                    <Route path="/profile/addBank" element={<AddBank />} />
+                    <Route path="/profile/beneficiary" element={<Benefeciary />} />
+                    <Route path="/profile/payBills" element={<PayBills />} />
+                    <Route path="/profile/transaction" element={<Transaction />} />
+                    <Route path="/profile/wallet" element={<Wallet />} />
                 </Route>
 
             </Routes>

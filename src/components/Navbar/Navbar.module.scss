@@ -10,12 +10,12 @@
   display: flex;
   justify-content: space-evenly;
   height: 50px;
-  background: linear-gradient(to right, rgba(37, 37, 0, 0.668), rgb(38, 0, 0));
+  background: linear-gradient(to right, #619bfe, #649EFF, );
   font-size: 30px;
 
   .liComponent {
     padding: 20px;
-    color: rgb(204, 204, 204);
+    color: #333;
     font-size: 20px;
   }
 }

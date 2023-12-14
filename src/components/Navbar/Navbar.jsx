@@ -16,7 +16,14 @@ export function Navbar() {
                     <Link className={style.liComponent} to='/'>Home</Link>
                     <Link className={style.liComponent} to='/profile'>Profile</Link>
                     <Link className={style.liComponent} to='/login'>Login</Link>
-                    <button className={style.LogBtn} onClick={handleLogaut}>Log out</button>
+                    <button className={style.LogBtn} onClick={handleLogaut}><span
+                        style={{
+                            textAlign: "center"
+
+                        }}
+                        class="material-symbols-outlined">
+                        logout
+                    </span></button>
                 </ul>
             </header>
         </>
